@@ -5,383 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
-<style>
-:root{
---textf-color:#ffff;
---text-color:#1a1c20;
---link-color:#4a76ee;
---background-color:#eeeff1;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-.nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:0 50px;
-height:80px;
-background-color:var(--background-color);
-
-}
-.nav .left a{
-color:var(--text-color);
-font-size:22px;
-font-weight:600;
-text-decoration:none;
-}
-.nav .left a:hover{
-color:#0000ff;
-}
-.nav .right a{
-color:var(--text-color);
-margin:0 10px;
-text-decoration:none;
-
-}
-.nav .right a:hover{
-color:#0000ff;
-}
-
-/* Section 1 : Hero */
-
-.hero-section{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:0 50px;
-margin:50px 0;
-gap:40px;
-}
-/* Section 1 : Hero headshot and img */ 
-.hero-section .headshot{
-flex:2;
-display:flex;
-justify-content:right;
-}
-.hero-section .headshot img{
-width:350px;
-border-radius:200px;
-}
-
-/* Section 1 : Hero text */ 
-
-.hero-section .text{
-flex:5px;
-}
-.hero-section .text h2{
-font-size:45px;
-padding-bottom:5px;
-}
-.hero-section .text .links{
-margin-top:25px;
-}
-.hero-section .text .links a{
-display:inline-block;
-text-decoration:none;
-padding:5px 10px;
-border:2px solid var(--link-color);
-border-radius:5px;
-margin-right:10px;
-margin-bottom:10px;
-}
-.hero-section .text .links a:hover{
-color:var(--text-color);
-border:2px solid var(--text-color);
-}
-/*Section 2 : Skills*/
-.skills-section{
-padding:0 50px;
-margin-bottom:100px;
-}
-.skills-section .cells{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-}
-.skills-section .cells .cell{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:10px;
-width:200px;
-padding:10px 20px;
-margin:10px;
-border:2px solid #d3d3d3;
-border-radius:5px;
-}
-.skills-section .cells .cell img{
-width:30px;
-height:30px;
-object-fit:contain;
-border-radius:2px;
-}
-.skills-section .cells .cell span{
-font-size:18px;
-}
-/*Section 2 : Skills*/
-.testimony-section{
-padding:0 30px;
-margin:100px;
-}
-.testimony-section .group{
-display:flex;
-gap:50px;
-align-items:center;
-}
-.testimony-section .group .person-details{
-text-align:center;
-gap:50px;
-flex:2;
-}
-.testimony-section .group .person-details img{
-width:200px;
-object-fit:cover;
-border-radius:100%;
-margin:10px 0;
-aspect-ratio:1/1;
-}
-.testimony-section .group .text{
-flex:8;
-}
-.testimony-section .group .person-details p{
-font-weight:600;
-gap:10px;
-}
-/*Section 2 : Contacts*/
-
-.contacts{
-padding:0 30px;
-}
-.contacts h2{
-margin-bottom:10px;
-}
-.contacts p{
-font-weight:600;
-font-size:1.2rem;
-}
-.contacts .row{
-flex-direction:colum;
-}
-.contacts .row .col-information{
-width:100%;
-display:flex;
-justify-content:space-between;
-}
-.contacts .row .col-information .contact-details p{
-padding:10px;
-font-size:1.2rem;
-}
-.contacts .row .col-information .contact-details p i{
-margin-right:10px;
-font-size:1.2rem;
-}
-
-.contacts .col-information:last-child{
-margin-top:40px;
-}
-.contacts form p{
-margin-bottom:10px;
-}
-.contacts form input{
-height:45px;
-width:100%;
-padding:10px;
-margin-bottom:10px;
-margin-top:10px;
-font-size:16px;
-border:1px solid #bfbbfb;
-outline:none;
-}
-.contacts form textarea{
-height:100px;
-width:100%;
-padding:0 10px;
-margin-bottom:30px;
-margin-top:10px;
-border:1px solid #bfbbfb;
-outline:none;
-font-size:16px;
-}
-.contacts form button{
-width:60px;
-height:30px;
-margin-bottom:20px;
-background-color:white;
-border-radius:5px;
-}
-.contacts form button:hover{
-background-color:var(--link-color);
-}
-
-/*Section 3 : footer*/
-.footer{
-background:black;
-height:50px;
-width:100%;
-padding:10px;
-justify-content:center;
-}
-.footer span{
-color:var(--textf-color);
-font-size:1.5rem;
-font-weight:600;
-padding-top:10px;
-padding-left:10px;
-}
-<!-- @media screen and(max-width:800px){
-.hero-section .links a{
-width:100%;
-margin-bottom:30px;
-display:block;
-margin:0 10px;
-}
-.hero-section .headshot img{
-width:100%;
-
-}
-}-->
-
-<!--Top navigation home page -->
-@media screen and (max-width:800px){
-.nav .right a i{
-flex-direction:column;
-position:fixed;
-display:inline-block;
-left:-100%;
-top:75px;
-background-color:#3333;
-transition:left 0.3s ease;
-width:300px;
-height:100vh;
-margin-right:0;
-}
-}
-
-@media screen and (max-width: 800px) {
-
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-	padding:30px;
-	margin:0 20px;
-  }
-  .hero-section .text{
-  font-size: 2rem;
-  margin-right:0px;
-  }
-  .hero-section .headshot{
-  margin:0 auto;
-  }
-  .hero-section .headshot img{
-  width:100%;
-  }
-  .skills-section{
-  flex-direction:column;
-  width:100%;
-  justify-content:center;
-  padding:30px;
-  margin:0 20px;
-  }
-  .skills-section .cells{
-  position:relative;
-  justify-content:center;
-  align-items:center;
-  display:block;
-  }
-  .skills-section .cells .cell{
-  position:static;
-  justify-content: center;
-  width:100%;
-  height:100px;
-  align-items:center;
-  }
-  .skills-section .cells .cell img{
-width:40px;
-height:40px;
-object-fit:contain;
-border-radius:2px;
-}
-}
-
-@media screen and (max-width: 800px){
-.testimony-section {
-text-align:center;
-margin-top:5px;
-}
-.testimony-section h2{
-text-align:center;
-font-size:3rem;
-margin-top:15px;
-
-}
-.testimony-section .group{
-flex-direction:column;
-}
-.testimony-section .group .person-details{
-text-align:center;
-width:100%;
-}
-.testimony-section .group .person-details img{
-width:120%;
-margin-top:15px;
-}
-.testimony-section .group .person-details p{
-font-size:3rem;
-}
-.testimony-section .text{
-font-size:2rem;
-}
-  }
-@media screen and (max-width: 800px){
-.contacts .row .col-information{
-flex-direction:column;
-width:100%
-}
-.contacts h2{
-margin:10px 0;
-font-size:3rem;
-text-align:center;
-
-}
-.contacts h3{
-text-align:center;
-margin:5px 0;
-}
-.contacts .row .col-information .contact-details{
-margin-top:0px;
-margin-bottom:15px;
-
-}
-.contacts .row .col-information .contact-details p{
-color:#616161;
-font-weight:800;
-font-size:1.5rem;
-gap:30px;
-}
-.contacts .row .col-information .contact-details p:hover{
-background-color:#0000ff;
-color:white;
-border-radius:5px;
-}
-.contacts .row .col-information .contact-details p i{
-gap:20px;
-font-size:2rem;
-margin-bottom:15px;
-}
-.contacts .row .col-information .contact-details p i:hover{
-background-color:#0000ff;
-}
-}
-
-
-
-</style>
 <body>
 <section class="nav">
 <div class="left">
@@ -410,7 +36,6 @@ background-color:#0000ff;
 </a>
 </div>
 </section>
-
 <main>
 <section class="hero-section">
 <div class="text">
@@ -432,7 +57,7 @@ background-color:#0000ff;
 </div>
 </div>
 <div class="headshot">
-<img src="C:\Users\Admin\Documents\project\notepad test project\portfolio\2x2.jpg" alt="profile">
+<img src="2x2.jpg" alt="profile">
 </div>
 </section>
 <Section class="skills-section" id="skills">
@@ -449,23 +74,23 @@ Cloud Technologies: AWS ECS, S3, AWS Simple Email Service, AWS Secret Manager, C
 <!--cells-->
 <div class="cells">
 <div class="cell">
-<img src="C:\Users\Admin\Documents\project\notepad test project\portfolio\html-logo.webp">
+<img src="html-logo.webp">
 <span>HTML</span>
 </div>
 <div class="cell">
-<img src="C:\Users\Admin\Documents\project\notepad test project\portfolio\css-logo.webp">
+<img src="css-logo.webp">
 <span>CSS</span>
 </div>
 <div class="cell">
-<img src="C:\Users\Admin\Documents\project\notepad test project\portfolio\javascript-logo.webp">
+<img src="javascript-logo.webp">
 <span>Javascript</span>
 </div>
 <div class="cell">
-<img src="C:\Users\Admin\Documents\project\notepad test project\portfolio\node-logo.webp">
+<img src="node-logo.webp">
 <span>Node.js</span>
 </div>
 <div class="cell">
-<img src="C:\Users\Admin\Documents\project\notepad test project\portfolio\react-logo.webp">
+<img src="react-logo.webp">
 <span>React.js</span>
 </div>
 </div>
@@ -474,7 +99,7 @@ Cloud Technologies: AWS ECS, S3, AWS Simple Email Service, AWS Secret Manager, C
 <h2>Testimony</h2>
 <div class="group">
 <div class="person-details">
-<img src="C:\Users\Admin\Documents\project\notepad test project\portfolio\testimony-headshot.webp">
+<img src="testimony-headshot.webp">
 <p>John Doe</p>
 </div>
 <div class="text">
@@ -488,10 +113,10 @@ Expert testimony is an opinion stated under oath by a qualified individual durin
 <div class="row">
 <div class="col-information">
 <div class="contact-details">
-<p><i class="fa-solid fa-phone"></i> +254720353488</p>
-<p><i class="fa-brands fa-slack"></i> Slack:Philip Wainaina</p>
+<p><i class="fa-solid fa-phone"></i>+254720353488</p>
+<p><i class="fa-brands fa-slack"></i>Slack:Philip Wainaina</p>
 <p><i class="fa-solid fa-envelope"></i> Philipwainaina95@gmail.com</p>
-<p><i class="fa-solid fa-map-pin"></i> Kahawa Wendani</p>
+<p><i class="fa-solid fa-map-pin"></i></i> Kahawa Wendani</p>
 </div>
 <form>
 <p>Please fill the form</p>
